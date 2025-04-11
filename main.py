@@ -135,7 +135,8 @@ def process_image(image_path: str, use_google_vision: bool=True) -> Dict[str, An
             os.remove(tmp)
 
     if not raw_text.strip():
-        raw_text = pytesseract.image_to_string(thresh)
+        # raw_text = pytesseract.image_to_string(thresh)
+        pass
 
     raw_ex = extract_nutrition(raw_text)
     spell_text = spell_check_text(raw_text)
