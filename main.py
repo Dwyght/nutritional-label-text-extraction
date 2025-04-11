@@ -14,7 +14,7 @@ from typing import List, Optional, Dict, Any
 from fastapi.middleware.cors import CORSMiddleware
 
 # ——————— Configuration ——————— #
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "google_vision_json/eastern-store-455819-u7-6d76619e02a8.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "google_vision_json/eastern-store-455819-u7-c6cacee3bd36.json"
 UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 

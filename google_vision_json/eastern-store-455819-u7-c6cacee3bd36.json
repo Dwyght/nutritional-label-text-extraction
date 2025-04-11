@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "eastern-store-455819-u7",
+  "private_key_id": "c6cacee3bd36717e2997859d3f821ff6f181422d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzztfjgtS1ZrtR\nmQ+5WnpFkBZUQUJGokD0SxIdivzkJvJHyxI/NaTFXtGdGkBZcnRqyM0kiVh982vR\nWMbU3UIaNnRiqfYLlZ8yyIND573SS2OnpL8iUeh8ej7j9C9NssXbXaY5eDIX+wc2\n2XU76Rls9kw1CdANr552HWAU0Ue8A1FqI/6Yy6YE+hShNNbWgMawkTLJP9rnV+Nd\ntJsY/8IZzDOBEF/SxqjmV5B4VTnY01SKDg8fVfJubtCcxWGYX9irsaEdNRNXsFbc\nofip32wTKScY/kR5pgFN3AsryVH9qG2dTm01H1BMYJ8IFcagDldLE/Ph2hYuAxqA\nbgK9qY/pAgMBAAECggEABlN57X96H9q6LuwBbV5FTIK+Al9cZ1NIkT+95quv65AC\nOKvom7A1uJr2KX6Vsn/wIByp+QXbBu1kRvSGZFFXhMgTLrB3n183f2gmFCLIXyh3\nXFvTvK+gjBaZ9VevPV7Tjrz7/uwfaRAUKCYc9YtlMVv2AOy0NPMPkmzEp17YlQEC\ntybTTCSYydxttlIXB+7+bYm3Kzttr7E8NqDZtyBo/3Uxpjfe6jWYWEZqW1eRlN5r\nRVltRvtFsi5G15nNBW5fizFe4bg/ufJVjndP+Gc9cX3nKC+0Cj/CY2v0QSJDL0Te\n/LFEr65nkrF9p8ReGYUgRDeHCGT4j3mGIl7zXCth4QKBgQDsApCYdud+w23f6KND\nVCtPC4h0qPE/uECuFm1NA39CZRkxkcQWXDuKLEZWLmDDpU19XjhhOW0nYYRLixI4\nZpUtvI2nekrieKHoJTv5VOxPYM/D943YPfPaytAYIss/Z3MSbg+JZoZA7HEJ+xlA\nlhULMq6qqGKr2HqapKYGJMqCcQKBgQDDCaSAsvWesqHR/ZDmFSn87cS+WqQM48SI\nCUpuXhl63PPyQxDDB0sihCKIgaSkVv7tbhiA2/BvLlaS9gnNxBTH56DCzo/D/ONa\njzimZzfMl8Z7dpy5n8fzsnHhUQwG0H3F0ZgOzsg33GPJ3u9+JApApjMhNT89puDy\nrACj5rOw+QKBgQCUASvCoVadlVszPsYb9A3Q3U+usT/RkO/m/KOA13+YGKSLBHmu\n+BpSlV9qrlz6dJC63TqIJiZAuxPm+AjuG87TxtoivDt3+OS4G5mXy90CDplcsMNg\nZ8GkZOnJKRDC61IrrZ/Kr+PjlSNyeeilKzl5M0h8N2rhj7mbf0OquKnS0QKBgBOu\n53Etnmgzsu0UYAk4XZJvFIn5b9D1M6Je/aoBySSDJANxDUIBfG2xVCLeopULSpL/\np21pxOwTix0tw3OGtGowUCMY4Z1v6in7hkYU6Ka3MorHP63kGDPZ8HBC06nkZK0Q\nJ/5mlAI/NbrrytO6I2a+3y4cx5MbQlx7S10/LSdRAoGAM5/9MsYNNsGatbWqFB6y\nNEPQpcmRQaj6ZKqdBjPQbkcnoUQyVYevmHnbjDYik/kjaP+YrFBwWEF2OaQB9Skf\nMiHqDivOJZA1h8E0IeUwMRU5cQnAMKdv5zemEHYuUQ2OT87waj9GuxlmvkT9wyDx\n7EIxhX6pUhpRli6Ohx7s8f4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "vision-access-sa@eastern-store-455819-u7.iam.gserviceaccount.com",
+  "client_id": "102691792854451357302",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vision-access-sa%40eastern-store-455819-u7.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

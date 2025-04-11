@@ -15,15 +15,12 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# Copy requirements file and install Python dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy your app and Google credentials
 COPY . .
 
-# Set the environment variable for Google Vision credentials
-ENV GOOGLE_APPLICATION_CREDENTIALS="/app/google_vision_json/eastern-store-455819-u7-6d76619e02a8.json"
+ENV GOOGLE_APPLICATION_CREDENTIALS="/app/google_vision_json/eastern-store-455819-u7-c6cacee3bd36.json"
 
 EXPOSE 8000
 
