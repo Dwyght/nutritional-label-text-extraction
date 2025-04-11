@@ -11,6 +11,7 @@ from google.cloud import vision
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import JSONResponse
 from typing import List, Optional, Dict, Any
+from fastapi.middleware.cors import CORSMiddleware
 
 # ——————— Configuration ——————— #
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "google_vision_json/eastern-store-455819-u7-6d76619e02a8.json"
@@ -155,7 +156,7 @@ def process_image(image_path: str, use_google_vision: bool=True) -> Dict[str, An
     sodium_n   = parse_number(sodium_per)
     carbs_n    = parse_number(carbs_per)
 
-    # totals = per‑serving * servings
+    # totals = per‑serving 
     protein_tot = protein_n * servings_n if protein_n is not None and servings_n is not None else None
     sodium_tot  = sodium_n * servings_n  if sodium_n  is not None and servings_n is not None else None
     carbs_tot   = carbs_n * servings_n   if carbs_n   is not None and servings_n is not None else None
@@ -177,6 +178,13 @@ def process_image(image_path: str, use_google_vision: bool=True) -> Dict[str, An
 # ——————— FastAPI App ——————— #
 
 app = FastAPI(title="Nutrition Label OCR API")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # You can restrict this to your app domain later
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/extract/")
 async def extract_multiple(
