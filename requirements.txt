@@ -12,4 +12,3 @@ pillow
 google-cloud-vision
 google-api-core
 google-auth
-

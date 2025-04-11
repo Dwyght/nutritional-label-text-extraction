@@ -19,14 +19,11 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy Google Vision credentials from local folder into the container
-COPY google_vision_json/ ./google_vision_json/
-
-# Set the environment variable so that the Google Vision API knows where to find the credentials.
-ENV GOOGLE_APPLICATION_CREDENTIALS="/app/google_vision_json/eastern-store-455819-u7-6d76619e02a8.json"
-
-# Copy your entire application code into the container
+# Copy your app and Google credentials
 COPY . .
+
+# Set the environment variable for Google Vision credentials
+ENV GOOGLE_APPLICATION_CREDENTIALS="/app/google_vision_json/eastern-store-455819-u7-6d76619e02a8.json"
 
 EXPOSE 8000
 
