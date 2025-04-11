@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+numpy
+opencv-python
+pytesseract
+textdistance
+pyspellchecker
+python-multipart
+opencv-contrib-python 
+caer
+pillow
+google-cloud-vision
+google-api-core
+google-auth
+

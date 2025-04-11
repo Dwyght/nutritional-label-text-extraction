@@ -1,0 +1,80 @@
+based from that i am changing my reg ex patterns because instead of calories, sodium, and sugars, i want to change it to sodium, carbohydrates, protein. i also want to add the number of servings. 
+
+these are the patterns for number of serving, sodium, protein, and carbohydrates. take note of the spaces of the patterns they can have same texts but some spaces are added in other datasets. make it case insensitive
+Servings per Container: value
+Servings per Container value
+Serving Per Container about value
+Servings Per Container about value
+Servings per pack: value
+Servings Per Pack: About value
+Serving Per Package: value
+No. of Servings per Container/Pack value
+No. of Servings per container/pack value
+No. of Servings per Container/ Pack value
+No. of Servings per container/ pack value
+No. of Servings per Container/Pack: value
+No. of Servings per container/pack: value
+No. of Servings per Container/ Pack: value
+No. of Servings per container/ pack: value
+No. of Servings per Container: value
+No. of Servings per Pack: value
+No. of Servings per Pack: About value
+Servings per Pack: value
+NO. OF SERVINGS: value 
+About value servings per container
+value serving per container
+value servings per container
+Servings Per Container value
+Servings: vlaue
+Servings per pack (value1g) value2 - in this case i will still only use the value 2 because it is the number of servings
+
+Sodium (mg) value
+Sodium(mg) value
+Sodium value mg
+Sodium valuemg
+Sodium, mg value
+
+Total Carbohydrates (g) value
+Total Carbohydrates(g) value
+Total Carbohydrates value g
+Total Carbohydrates valueg
+Total Carb. valueg
+Total Carb. value g
+Total Carb value g
+Total Carb valueg
+Carbohydrates valueg
+Carbohydrates value g
+Carbohydrates (g) value
+Carbohydrates(g) value
+Carbohydrates, g value
+Total Carbohydrate (g) value
+Total Carbohydrate(g) value
+Total Carbohydrate value g
+Total Carbohydrate valueg
+Carbohydrate valueg
+Carbohydrate value g
+Carbohydrate (g) value
+Carbohydrate(g) value
+Carbohydrate, g value
+
+Total Protein valueg
+Total Protein (g) value
+Total Protein(g) value
+Protein value g
+Protein valueg
+Protein, g value
+Protein (g) value
+Protein(g) value
+
+
+
+
+
+
+
+Total Protein (g) vlaue
+Protein <value g
+Protein <valueg
+Protein less than valueg
+Protein less than value g
+want to address servings that are decimals
