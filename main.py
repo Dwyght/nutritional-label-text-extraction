@@ -187,6 +187,23 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.post("/test-vision")
+async def test_vision(file: UploadFile = File(...)):
+    content = await file.read()
+    image = vision.Image(content=content)
+
+    client = vision.ImageAnnotatorClient()
+    response = client.text_detection(image=image)
+
+    if response.error.message:
+        return {"error": response.error.message}
+
+    texts = response.text_annotations
+    if texts:
+        return {"detected_text": texts[0].description}
+    else:
+        return {"detected_text": ""}
+
 @app.post("/extract/")
 async def extract_multiple(
     files: List[UploadFile] = File(...),
