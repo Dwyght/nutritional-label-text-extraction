@@ -13,8 +13,22 @@ from fastapi.responses import JSONResponse
 from typing import List, Optional, Dict, Any
 from fastapi.middleware.cors import CORSMiddleware
 
+import json
+import os
+
+# Your JSON string
+json_string = os.environ["GOOGLE_APPLICATION_CREDENTIALS_JSON"]
+
+# Convert string to Python dict
+data = json.loads(json_string)
+
+with open('key.json', 'w') as f:
+    json.dump(data, f, indent=4)
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "key.json"
+
 # ——————— Configuration ——————— #
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "google_vision_json/eastern-store-455819-u7-c6cacee3bd36.json"
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "google_vision_json/eastern-store-455819-u7-4783299a41f7.json"
 UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
@@ -256,3 +270,12 @@ async def extract_multiple(
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
+
+
+
+
+
+
+
+
+
